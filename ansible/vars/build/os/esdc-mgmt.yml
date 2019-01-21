@@ -53,7 +53,7 @@ pgsql_monitoring: "{{ esdc_mgmt.pgsql_monitoring }}"
 
 zabbix_api: "{{ esdc_mgmt.zabbix_api }}"
 
-esdc_source_repo: "https://github.com/erigones/esdc-{{ release_edition }}.git"
+esdc_source_repo: "https://github.com/YanChii/esdc-{{ release_edition }}.git"
 esdc_source_version: "{{ software_branch }}"
 
 firewall_allowed_tcp_ports:

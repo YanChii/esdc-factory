@@ -1,11 +1,12 @@
-builder_platform_url: 'http://download.erigones.org/esdc/factory/platform'
+#builder_platform_url: 'http://download.erigones.org/esdc/factory/platform'
+builder_platform_url: '{{ build_base_url }}/platform-janci'
 builder_platform:
   - name: 'boot'
-    version: '20180318T095138Z'
+    version: '20190107T203140Z'
     desc: 'SmartOS grub boot loader'
     link: 'boot-latest'
   - name: 'platform'
-    version: '20180318T095138Z'
+    version: '20190107T203140Z'
     desc: 'SmartOS kernel and boot_archive'
     link: 'platform-latest'
 
@@ -27,8 +28,8 @@ builder_archives:
 builder_isos_url: ''
 builder_isos:
   - name: 'rescuecd'
-    version: '5.0.4'
-    url: 'http://downloads.sourceforge.net/project/systemrescuecd/sysresccd-x86/5.0.4/systemrescuecd-x86-5.0.4.iso?use_mirror=netcologne'
+    version: '5.3.2'
+    url: 'http://downloads.sourceforge.net/project/systemrescuecd/sysresccd-x86/5.3.2/systemrescuecd-x86-5.3.2.iso?use_mirror=netcologne'
     link: 'rescuecd-latest'
 
 bootstrap_local_archive: "{{ bootstrap|default(false) }}"
